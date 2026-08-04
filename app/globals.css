@@ -1,0 +1,205 @@
+@import "tailwindcss";
+@reference "tailwindcss";
+
+/* ─── Fuentes locales — re_line brand fonts ──────────────────── */
+/* Melodrama Variable — Display / Headings */
+@font-face {
+  font-family: 'Melodrama';
+  src: url('/fonts/Melodrama_Complete/Fonts/WEB/Melodrama-Variable.woff2') format('woff2'),
+       url('/fonts/Melodrama_Complete/Fonts/WEB/Melodrama-Variable.woff')  format('woff');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Melodrama';
+  src: url('/fonts/Melodrama_Complete/Fonts/WEB/Melodrama-Light.woff2') format('woff2'),
+       url('/fonts/Melodrama_Complete/Fonts/WEB/Melodrama-Light.woff')  format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Melodrama';
+  src: url('/fonts/Melodrama_Complete/Fonts/WEB/Melodrama-Regular.woff2') format('woff2'),
+       url('/fonts/Melodrama_Complete/Fonts/WEB/Melodrama-Regular.woff')  format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Melodrama';
+  src: url('/fonts/Melodrama_Complete/Fonts/WEB/Melodrama-Bold.woff2') format('woff2'),
+       url('/fonts/Melodrama_Complete/Fonts/WEB/Melodrama-Bold.woff')  format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* URW DIN Regular — Body / UI */
+@font-face {
+  font-family: 'URW DIN';
+  src: url('/fonts/urw-din-regular/urw-din-regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ─── CSS Variables — Paleta oficial re_line (04_client_branding.md) */
+:root {
+  /* Colores de marca */
+  --primary:     #4a6063;   /* Dark Teal — botones, acentos, fondos oscuros */
+  --primary-dk:  #3b4e50;   /* Variante oscura */
+  --secondary:   #ccdee0;   /* Light Blue — fondos, tarjetas, hover */
+  --dark:        #3f3f3e;   /* Dark Charcoal — texto principal */
+  --dark-bg:     #1a1a1a;   /* Negro profundo para secciones oscuras */
+  --light:       #f7f5f2;   /* Fondo crema claro */
+  --white:       #ffffff;
+  --grey:        #8a8a8a;
+
+  /* Tipografías */
+  --font-display: 'Melodrama', Georgia, serif;
+  --font-body:    'URW DIN', system-ui, sans-serif;
+
+  /* Utilidades */
+  --radius-lg:    20px;
+  --radius-md:    12px;
+  --shadow-card:  0 4px 24px rgba(0,0,0,0.06);
+  --shadow-hover: 0 12px 40px rgba(0,0,0,0.14);
+  --transition:   0.3s ease;
+}
+
+/* ─── Base ───────────────────────────────────────────────────── */
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--light);
+  color: var(--dark);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+/* Melodrama para todos los encabezados */
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 300; /* Melodrama se usa principalmente en Light/Variable */
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+/* ─── Animations ─────────────────────────────────────────────── */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes ribbonScroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+@keyframes galleryScroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+@keyframes heroZoom {
+  from { transform: scale(1.0); }
+  to   { transform: scale(1.05); }
+}
+@keyframes scrollLine {
+  0%, 100% { opacity: 0.4; transform: scaleY(1); }
+  50%       { opacity: 1;   transform: scaleY(1.3); }
+}
+@keyframes bounceSlow {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-6px); }
+}
+
+/* ─── Animation utility classes ──────────────────────────────── */
+.animate-ribbon      { animation: ribbonScroll  25s linear infinite; }
+.animate-gallery     { animation: galleryScroll 30s linear infinite; }
+.animate-hero-zoom   { animation: heroZoom 10s ease-in-out infinite alternate; }
+.animate-scroll-line { animation: scrollLine 2s ease-in-out infinite; }
+.animate-bounce-slow { animation: bounceSlow 2s ease-in-out infinite; }
+.animate-fade-in     { animation: fadeIn 0.6s ease-out forwards; }
+
+/* ─── Section helpers ────────────────────────────────────────── */
+.section-label {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 0.75rem;
+  font-weight: 700;
+  font-family: var(--font-body);
+  color: var(--primary);
+  margin-bottom: 12px;
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 300;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+/* ─── Buttons ────────────────────────────────────────────────── */
+.btn-primary-lg {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px 40px;
+  border-radius: 9999px;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+  background-color: var(--primary);
+  color: var(--white);
+  transition: all var(--transition);
+  box-shadow: 0 4px 20px rgba(74,96,99,0.3);
+  text-decoration: none;
+}
+.btn-primary-lg:hover {
+  background-color: var(--primary-dk);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(74,96,99,0.4);
+}
+
+.btn-ghost-lg {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 36px;
+  border-radius: 9999px;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.95rem;
+  border: 2px solid rgba(255,255,255,0.45);
+  color: var(--white);
+  background: transparent;
+  transition: all var(--transition);
+  text-decoration: none;
+}
+.btn-ghost-lg:hover {
+  border-color: var(--white);
+  background: rgba(255,255,255,0.08);
+  transform: translateY(-2px);
+}
+
+/* ─── Reveal ─────────────────────────────────────────────────── */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
