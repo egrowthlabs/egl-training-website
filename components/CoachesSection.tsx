@@ -38,15 +38,12 @@ export default function CoachesSection() {
             <div className="absolute inset-0" style={{
               background: 'linear-gradient(to top, rgba(26,26,26,0.6) 0%, transparent 60%)'
             }} />
-            {/* Badge sobre la foto */}
             <div className="absolute bottom-6 left-6">
               <span
                 className="inline-block text-xs font-bold px-4 py-2 rounded-full"
                 style={{
-                  background: 'rgba(95,179,179,0.15)',
-                  border: '1px solid rgba(95,179,179,0.4)',
-                  color: 'var(--primary)',
-                  backdropFilter: 'blur(8px)',
+                  background: '#ffffff',
+                  color: '#1a1a1a',
                 }}
               >
                 Fundadora de re_line
