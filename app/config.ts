@@ -212,7 +212,7 @@ export const PLANES: Plan[] = [
   {
     id: 'mensual',
     name: 'Mensual',
-    price: 299,
+    price: 450,
     period: '/mes',
     periodLabel: 'mes',
     features: [
@@ -227,10 +227,10 @@ export const PLANES: Plan[] = [
   {
     id: 'trimestral',
     name: 'Trimestral',
-    price: 749,
+    price: 1215,
     period: '/3 meses',
     periodLabel: '3 meses',
-    savings: 'Ahorras $148 MXN',
+    savings: 'Ahorras $135 MXN',
     features: [
       'Todo lo del plan mensual',
       'Acceso prioritario a contenido nuevo',
@@ -244,10 +244,10 @@ export const PLANES: Plan[] = [
   {
     id: 'anual',
     name: 'Anual',
-    price: 2499,
+    price: 4320,
     period: '/año',
     periodLabel: 'año',
-    savings: 'Ahorras $1,089 MXN',
+    savings: 'Ahorras $1,080 MXN',
     features: [
       'Todo lo del plan trimestral',
       '2 sesiones de asesoría personal',
