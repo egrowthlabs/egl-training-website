@@ -98,7 +98,7 @@ export default function MetodologiaSection() {
         </div>
 
         {/* Right: Images */}
-        <div className="relative h-[480px] md:h-[580px]">
+        <div className="relative h-[300px] sm:h-[380px] md:h-[480px] lg:h-[580px]">
           {/* Main large image */}
           <div className="absolute inset-0 rounded-2xl overflow-hidden shadow-2xl">
             <Image
@@ -109,9 +109,9 @@ export default function MetodologiaSection() {
               sizes="(max-width: 768px) 100vw, 50vw"
             />
           </div>
-          {/* Secondary floating image */}
+          {/* Secondary floating image — hidden on mobile to avoid overflow */}
           <div
-            className="absolute -bottom-6 -left-6 w-48 h-60 rounded-xl overflow-hidden shadow-xl border-4"
+            className="hidden md:block absolute -bottom-6 -left-6 w-48 h-60 rounded-xl overflow-hidden shadow-xl border-4"
             style={{ borderColor: 'var(--light)' }}
           >
             <Image
@@ -122,9 +122,9 @@ export default function MetodologiaSection() {
               sizes="192px"
             />
           </div>
-          {/* Quote overlay */}
+          {/* Quote overlay — hidden on mobile to avoid overflow */}
           <div
-            className="absolute -top-4 -right-4 max-w-[180px] rounded-2xl p-4 shadow-xl"
+            className="hidden md:block absolute -top-4 -right-4 max-w-[180px] rounded-2xl p-4 shadow-xl"
             style={{
               background: 'var(--dark)',
               border: '1px solid rgba(95,179,179,0.25)',

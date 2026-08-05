@@ -33,7 +33,7 @@ export default function Hero() {
 
           {/* H1 */}
           <h1
-            className="text-5xl md:text-7xl font-black tracking-tight text-white leading-[1.05] mb-6"
+            className="text-4xl sm:text-5xl md:text-7xl font-black tracking-tight text-white leading-[1.05] mb-6"
             style={{ animation: 'fadeIn 0.7s ease 0.1s both' }}
           >
             Entrena con{' '}
@@ -44,7 +44,7 @@ export default function Hero() {
 
           {/* Description */}
           <p
-            className="text-white/75 text-lg md:text-xl leading-relaxed mb-10 max-w-xl"
+            className="text-white/75 text-base md:text-xl leading-relaxed mb-6 md:mb-10 max-w-xl"
             style={{ animation: 'fadeIn 0.7s ease 0.2s both' }}
           >
             Clases on-demand de cardio consciente, fuerza funcional y movilidad.
@@ -88,7 +88,7 @@ export default function Hero() {
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 right-10 z-10 flex flex-col items-center gap-2 animate-bounce-slow">
+      <div className="absolute bottom-8 right-4 md:right-10 z-10 flex flex-col items-center gap-2 animate-bounce-slow hidden sm:flex">
         <span className="text-white/40 text-xs tracking-widest rotate-90 origin-center mb-3">
           SCROLL
         </span>

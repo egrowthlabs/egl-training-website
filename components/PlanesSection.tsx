@@ -27,9 +27,9 @@ export default function PlanesSection() {
             return (
               <div
                 key={plan.id}
-                className="relative rounded-2xl p-8 flex flex-col transition-all duration-300"
+                className="relative rounded-2xl p-6 md:p-8 flex flex-col transition-all duration-300"
                 style={{
-                  backgroundColor: isHL ? 'var(--dark-teal)' : 'rgba(255,255,255,0.05)',
+                  backgroundColor: isHL ? 'rgba(255,255,255,0.05)' : 'rgba(255,255,255,0.05)',
                   border: isHL ? '2px solid var(--primary)' : '1px solid rgba(255,255,255,0.1)',
                   transform: isHL ? 'translateY(-12px)' : 'none',
                   boxShadow: isHL ? '0 24px 64px rgba(95,179,179,0.2)' : 'none',

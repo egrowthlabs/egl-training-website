@@ -49,7 +49,7 @@ export default function Navbar() {
             alt="re_line inner & out"
             width={220}
             height={54}
-            className="h-16 w-auto object-contain"
+            className="h-10 md:h-16 w-auto object-contain"
             priority
           />
         </a>
@@ -123,7 +123,7 @@ export default function Navbar() {
             <li key={link.href}>
               <button
                 onClick={() => handleNavClick(link.href)}
-                className="w-full text-left py-3 text-white/80 hover:text-white font-medium border-b border-white/10 text-sm"
+                className="w-full text-left min-h-[44px] flex items-center py-2 text-white/80 hover:text-white font-medium border-b border-white/10 text-sm"
               >
                 {link.label}
               </button>

@@ -36,10 +36,9 @@ export default function TestimoniosSection() {
             return (
               <div
                 key={t.name}
-                className="relative rounded-2xl p-7 transition-transform duration-300"
+                className={`relative rounded-2xl p-5 md:p-7 transition-transform duration-300 ${isFeatured ? 'md:-translate-y-4' : ''}`}
                 style={{
                   backgroundColor: isFeatured ? '#1a1a1a' : 'var(--white)',
-                  transform: isFeatured ? 'translateY(-16px)' : 'none',
                   boxShadow: isFeatured
                     ? '0 20px 60px rgba(0,0,0,0.35)'
                     : '0 4px 24px rgba(0,0,0,0.08)',

@@ -23,10 +23,10 @@ export default function CoachesSection() {
         {/* Coach — layout de 2 columnas */}
         <div
           ref={ref}
-          className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center reveal ${visible ? 'visible' : ''}`}
+          className={`grid grid-cols-1 md:grid-cols-2 gap-12 items-center reveal ${visible ? 'visible' : ''}`}
         >
           {/* Foto */}
-          <div className="relative h-[520px] md:h-[640px] rounded-3xl overflow-hidden order-1">
+          <div className="relative h-[320px] sm:h-[420px] md:h-[520px] lg:h-[640px] rounded-3xl overflow-hidden order-1">
             <Image
               src={betzy.imagePath}
               alt="Betzabeth Anayanci de Luna Esquivel — fundadora de re_line"
@@ -96,7 +96,7 @@ export default function CoachesSection() {
             </div>
 
             {/* Stats */}
-            <div className="grid grid-cols-3 gap-6 py-6 border-t border-b" style={{ borderColor: 'rgba(255,255,255,0.1)' }}>
+            <div className="grid grid-cols-3 gap-3 md:gap-6 py-6 border-t border-b" style={{ borderColor: 'rgba(255,255,255,0.1)' }}>
               {[
                 { num: '+10', label: 'Años de experiencia' },
                 { num: '50+', label: 'Clases on-demand' },

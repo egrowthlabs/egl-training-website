@@ -89,7 +89,7 @@ export default function MisionSection() {
             className="absolute left-0 top-0 bottom-0 w-0.5 rounded-full"
             style={{ background: 'linear-gradient(to bottom, var(--primary), transparent)' }}
           />
-          <blockquote className="pl-8">
+          <blockquote className="pl-5 md:pl-8">
             <p
               className="text-lg md:text-xl leading-relaxed"
               style={{ color: 'rgba(255,255,255,0.72)' }}

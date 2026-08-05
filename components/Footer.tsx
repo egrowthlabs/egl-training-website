@@ -5,8 +5,8 @@ import { CONTACT, APP_URL, SLOGAN } from '@/app/config'
 export default function Footer() {
   return (
     <footer style={{ backgroundColor: '#1a1a1a', borderTop: '1px solid rgba(255,255,255,0.07)' }}>
-      <div className="max-w-7xl mx-auto px-6 md:px-12 py-16">
-        <div className="grid md:grid-cols-4 gap-10 md:gap-8 mb-12">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 py-10 md:py-16">
+        <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-10 md:gap-8 mb-12">
 
           {/* Col 1: Brand */}
           <div>
