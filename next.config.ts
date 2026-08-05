@@ -1,10 +1,6 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  // Ignorar ESLint durante el build en Vercel
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
   images: {
     remotePatterns: [
       {
@@ -14,6 +10,10 @@ const nextConfig: NextConfig = {
       {
         protocol: 'https',
         hostname: 'egl-training-ui.vercel.app',
+      },
+      {
+        protocol: 'https',
+        hostname: '*.amazonaws.com',
       },
     ],
   },
