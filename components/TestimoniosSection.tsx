@@ -38,10 +38,10 @@ export default function TestimoniosSection() {
                 key={t.name}
                 className="relative rounded-2xl p-7 transition-transform duration-300"
                 style={{
-                  backgroundColor: isFeatured ? 'var(--dark-teal)' : 'var(--white)',
+                  backgroundColor: isFeatured ? '#1a1a1a' : 'var(--white)',
                   transform: isFeatured ? 'translateY(-16px)' : 'none',
                   boxShadow: isFeatured
-                    ? '0 20px 60px rgba(44,60,62,0.35)'
+                    ? '0 20px 60px rgba(0,0,0,0.35)'
                     : '0 4px 24px rgba(0,0,0,0.08)',
                 }}
               >
