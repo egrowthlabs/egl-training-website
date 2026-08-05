@@ -20,7 +20,7 @@ export default function Footer() {
           <p className="text-white/50 text-sm leading-relaxed mb-1">
             inner &amp; out
           </p>
-          <p className="text-xs tracking-[0.15em] italic mb-5" style={{ color: 'var(--primary)' }}>
+          <p className="text-xs tracking-[0.15em] italic mb-5" style={{ color: 'rgba(255,255,255,0.5)' }}>
             {SLOGAN}
           </p>
             <a

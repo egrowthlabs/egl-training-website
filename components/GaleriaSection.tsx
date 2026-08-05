@@ -14,7 +14,7 @@ export default function GaleriaSection() {
     >
       {/* Header */}
       <div className="text-center mb-12 px-6">
-        <p className="section-label mb-3">Galería</p>
+        <p className="section-label mb-3" style={{ color: 'rgba(255,255,255,0.55)' }}>Galería</p>
         <h2 className="section-title text-white">
           El movimiento en acción
         </h2>

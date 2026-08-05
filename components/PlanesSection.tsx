@@ -11,7 +11,7 @@ export default function PlanesSection() {
       <div className="max-w-6xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
-          <p className="section-label mb-3">Precios</p>
+          <p className="section-label mb-3" style={{ color: 'rgba(255,255,255,0.55)' }}>Precios</p>
           <h2 className="section-title text-white mb-4">
             Elige tu plan
           </h2>
@@ -39,7 +39,7 @@ export default function PlanesSection() {
                 {isHL && plan.badge && (
                   <div
                     className="absolute -top-4 left-1/2 -translate-x-1/2 px-5 py-1.5 rounded-full text-xs font-black tracking-widest uppercase"
-                    style={{ backgroundColor: 'var(--primary)', color: 'var(--dark)' }}
+                    style={{ backgroundColor: '#ffffff', color: '#1a1a1a' }}
                   >
                     {plan.badge}
                   </div>
@@ -56,13 +56,13 @@ export default function PlanesSection() {
                   <div className="flex items-baseline gap-1">
                     <span
                       className="text-4xl md:text-5xl font-black"
-                      style={{ color: isHL ? 'var(--primary)' : 'var(--white)' }}
+                      style={{ color: isHL ? '#8ecece' : 'var(--white)' }}
                     >
                       ${plan.price.toLocaleString()}
                     </span>
                     <span
                       className="text-sm font-medium"
-                      style={{ color: isHL ? 'rgba(255,255,255,0.65)' : 'rgba(255,255,255,0.45)' }}
+                      style={{ color: isHL ? 'rgba(255,255,255,0.75)' : 'rgba(255,255,255,0.45)' }}
                     >
                       MXN{plan.period}
                     </span>
@@ -70,7 +70,7 @@ export default function PlanesSection() {
                   {plan.savings && (
                     <p
                       className="mt-2 text-xs font-semibold"
-                      style={{ color: 'var(--primary)' }}
+                      style={{ color: '#8ecece' }}
                     >
                       {plan.savings}
                     </p>
@@ -108,8 +108,8 @@ export default function PlanesSection() {
                   style={
                     isHL
                       ? {
-                          backgroundColor: 'var(--primary)',
-                          color: 'var(--dark)',
+                          backgroundColor: '#ffffff',
+                          color: '#1a1a1a',
                         }
                       : {
                           border: '2px solid rgba(255,255,255,0.3)',

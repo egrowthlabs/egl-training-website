@@ -44,7 +44,7 @@ export default function ClasesSection({ clases }: Props) {
               {/* Badge */}
               <div
                 className="absolute top-5 left-5 px-3 py-1.5 rounded-full text-xs font-bold"
-                style={{ backgroundColor: 'var(--primary)', color: 'var(--dark)' }}
+                style={{ backgroundColor: '#ffffff', color: '#1a1a1a' }}
               >
                 ⭐ Más popular
               </div>
