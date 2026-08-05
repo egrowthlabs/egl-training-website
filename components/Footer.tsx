@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { CONTACT, APP_URL } from '@/app/config'
+import { CONTACT, APP_URL, SLOGAN } from '@/app/config'
 
 export default function Footer() {
   return (
@@ -17,8 +17,11 @@ export default function Footer() {
             height={50}
             className="h-12 w-auto object-contain mb-3"
           />
-          <p className="text-white/50 text-sm leading-relaxed mb-5">
+          <p className="text-white/50 text-sm leading-relaxed mb-1">
             inner &amp; out
+          </p>
+          <p className="text-xs tracking-[0.15em] italic mb-5" style={{ color: 'var(--primary)' }}>
+            {SLOGAN}
           </p>
             <a
               href={CONTACT.instagramUrl}
@@ -114,9 +117,6 @@ export default function Footer() {
         >
           <p className="text-white/30 text-xs">
             © 2026 re_line · Todos los derechos reservados.
-          </p>
-          <p className="text-white/30 text-xs">
-            Hecho con ❤️ en Monterrey, México
           </p>
         </div>
       </div>

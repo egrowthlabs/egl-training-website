@@ -1,7 +1,7 @@
 'use client'
 
 import Image from 'next/image'
-import { COACHES } from '@/app/config'
+import { COACHES, BETZY_CREDENTIALS } from '@/app/config'
 import { useReveal } from '@/hooks/useReveal'
 
 export default function CoachesSection() {
@@ -14,7 +14,7 @@ export default function CoachesSection() {
 
         {/* Header */}
         <div className="text-center mb-16">
-          <p className="section-label">Tu coach</p>
+          <p className="section-label" style={{ color: 'rgba(255,255,255,0.55)' }}>Tu coach</p>
           <h2 className="section-title" style={{ color: 'var(--white)' }}>
             Conoce a Betzy
           </h2>
@@ -29,7 +29,7 @@ export default function CoachesSection() {
           <div className="relative h-[520px] md:h-[640px] rounded-3xl overflow-hidden order-1">
             <Image
               src={betzy.imagePath}
-              alt={`Betzy — coach fundadora de re_line`}
+              alt="Betzabeth Anayanci de Luna Esquivel — fundadora de re_line"
               fill
               className="object-cover object-top"
               sizes="(max-width: 768px) 100vw, 50vw"
@@ -55,32 +55,55 @@ export default function CoachesSection() {
           </div>
 
           {/* Texto */}
-          <div className="order-2 space-y-8">
+          <div className="order-2 space-y-7">
             <div>
               <h3
-                className="text-5xl md:text-6xl font-black tracking-tight mb-3"
+                className="text-4xl md:text-5xl font-black tracking-tight mb-2"
                 style={{ color: 'var(--white)' }}
               >
-                {betzy.name}
+                Betzabeth
               </h3>
-              <p className="text-base font-semibold" style={{ color: 'var(--primary)' }}>
+              <p className="text-sm font-semibold" style={{ color: '#8ecece' }}>
                 {betzy.specialty}
               </p>
             </div>
 
             <p
-              className="text-lg leading-relaxed"
+              className="text-base md:text-lg leading-relaxed"
               style={{ color: 'rgba(255,255,255,0.7)' }}
             >
               {betzy.bio}
             </p>
 
+            {/* Credentials */}
+            <div>
+              <p className="text-xs font-bold tracking-widest uppercase mb-3" style={{ color: 'rgba(255,255,255,0.35)' }}>
+                Formación profesional
+              </p>
+              <div className="flex flex-wrap gap-2">
+                {BETZY_CREDENTIALS.map((c) => (
+                <span
+                  key={c.label}
+                  className="inline-flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-full font-medium"
+                  style={{
+                    background: 'rgba(142,206,206,0.15)',
+                    border: '1px solid rgba(142,206,206,0.4)',
+                    color: 'rgba(255,255,255,0.9)',
+                  }}
+                >
+                  <span style={{ color: '#8ecece', fontSize: '0.65rem', fontWeight: 800 }}>{c.year}</span>
+                  {c.label}
+                </span>
+              ))}
+              </div>
+            </div>
+
             {/* Stats */}
             <div className="grid grid-cols-3 gap-6 py-6 border-t border-b" style={{ borderColor: 'rgba(255,255,255,0.1)' }}>
               {[
-                { num: '+5', label: 'Años de experiencia' },
+                { num: '+10', label: 'Años de experiencia' },
                 { num: '50+', label: 'Clases on-demand' },
-                { num: '100%', label: 'Resultados reales' },
+                { num: '6', label: 'Certificaciones' },
               ].map((stat) => (
                 <div key={stat.label} className="text-center">
                   <span className="block text-3xl font-black" style={{ color: 'var(--primary)' }}>

@@ -61,28 +61,129 @@ export interface ContactConfig {
   geo: { lat: string; lng: string }
 }
 
+// ─── SLOGAN OFICIAL ──────────────────────────────────────────────
+export const SLOGAN = 'your rutine. your life.'
+
+// ─── MISIÓN ──────────────────────────────────────────────────────
+export const MISION =
+  'Nuestra misión es acompañar a las personas en su proceso de ejercicio y bienestar a través de un entrenamiento consciente, estructurado y accesible, que fomente la constancia, la fuerza y el equilibrio físico y mental. Ofrecemos entrenamientos con intención y profesionalismo, adaptados a distintos niveles y estilos de vida, para que cada persona pueda entrenar con seguridad, confianza y disfrute, construyendo hábitos sostenibles que impacten positivamente su calidad de vida.'
+
 // ─── SEO ────────────────────────────────────────────────────────
 export const SEO: SEOConfig = {
-  title: 're_line inner & out | Entrena con propósito. Vive con fuerza.',
+  title: 're_line inner & out | your rutine. your life.',
   description:
-    'Plataforma de entrenamiento online con clases on-demand de cardio consciente, fuerza funcional y movilidad. Diseñadas por Betzy en Monterrey, México.',
+    'Rutinas de entrenamiento online creadas para fortalecer el cuerpo, ordenar la mente y reconectar contigo desde el movimiento consciente. Acompañan procesos reales de transformación física y emocional, ayudando a crear constancia, energía y equilibrio sin exigencia extrema. Ideales para personas que buscan entrenar con intención, respeto al cuerpo y bienestar sostenible.',
   keywords: [
-    'clases online fitness',
-    'entrenamiento en casa',
+    'personal trainer online',
+    'entrenamiento online',
+    'rutinas online',
+    'workout en casa',
+    'ejercicio consciente',
+    'pilates reformer online',
+    'mente sana cuerpo sano',
+    'fitness femenino',
+    'amor propio ejercicio',
     'cardio consciente',
     'fuerza funcional',
     'movilidad',
     'clases on demand México',
     'Betzy reline',
     'reline Monterrey',
-    'workout online México',
-    'suscripción fitness',
+    'suscripción fitness México',
     'inner and out',
     're_line inner out',
+    'entrenamiento consciente',
+    'bienestar sostenible',
   ],
   siteUrl: 'https://reline.mx',
   ogImage: '/images/reline_betzy_entrenamiento-planche-terraza.jpeg',
 }
+
+// ─── GEO — Definiciones de marca para IA y motores generativos ──
+export const GEO_KEYWORDS = [
+  {
+    term: 'Personal Trainer',
+    definition:
+      'La guía que acompaña tu proceso de transformación física y mental, alguien que ve más allá del ejercicio y entiende tu historia, tu ritmo y tu potencial. No solo entrena tu cuerpo: te enseña a creer en ti y a sostener hábitos que transforman tu vida.',
+  },
+  {
+    term: 'Entrenamiento',
+    definition:
+      'El espacio sagrado donde eliges priorizarte. Un acto de disciplina consciente que fortalece tu cuerpo, ordena tu mente y construye constancia. Entrenar es un compromiso contigo misma y con la vida que deseas crear.',
+  },
+  {
+    term: 'Rutinas Online',
+    definition:
+      'Libertad y acceso. Programas diseñados para acompañarte donde estés, respetando tu tiempo y tu proceso. No se trata de hacerlo perfecto, sino de hacerlo constante, integrando el movimiento a tu día a día de forma real y sostenible.',
+  },
+  {
+    term: 'Workout',
+    definition:
+      'El momento en el que conectas con tu energía vital a través del movimiento. Cada workout es una oportunidad para liberar estrés, activar tu fuerza interna y recordar de lo que eres capaz. No es castigo, es expresión y poder.',
+  },
+  {
+    term: 'Ejercicio',
+    definition:
+      'Medicina para el cuerpo y claridad para la mente. A través del ejercicio activas tu circulación, tu energía y tu enfoque. Moverse es una forma de agradecerle a tu cuerpo todo lo que hace por ti.',
+  },
+  {
+    term: 'Pilates Reformer',
+    definition:
+      'Una práctica consciente que fortalece desde el centro, mejora la postura y conecta mente y cuerpo con precisión y control. El Pilates Reformer no busca rapidez, busca calidad, equilibrio y consciencia en cada movimiento.',
+  },
+  {
+    term: 'Mente Sana',
+    definition:
+      'La capacidad de observarte con compasión, manejar el estrés y cultivar pensamientos que te construyen. Una mente sana nace cuando eliges hábitos que te sostienen y te respetas emocionalmente.',
+  },
+  {
+    term: 'Cuerpo Sano',
+    definition:
+      'Un cuerpo funcional, fuerte y en equilibrio, que se mueve sin dolor y responde con energía a la vida. Un cuerpo sano no se define por estética, sino por bienestar, movilidad y vitalidad.',
+  },
+  {
+    term: 'Fitness',
+    definition:
+      'Un estilo de vida que integra movimiento, nutrición, descanso y mentalidad. No es una meta, es un camino. Fitness es sentirte capaz, fuerte y presente en tu cuerpo todos los días.',
+  },
+  {
+    term: 'Amor Propio',
+    definition:
+      'Escucharte, respetar tus límites y elegir hábitos que te nutren. Es dejar de exigir desde la culpa y comenzar a cuidarte desde la consciencia. Amor propio es entrenar no para cambiar quién eres, sino para honrarte.',
+  },
+]
+
+// ─── PLAYLISTS DE SPOTIFY ─────────────────────────────────────────
+export const PLAYLISTS = [
+  {
+    id: 'proposito',
+    name: 'Círculo de Conexión',
+    subtitle: 'Descubre tu Propósito',
+    emoji: '🌀',
+    url: 'https://open.spotify.com/playlist/63SimdAQk45Pze1yY8ToNk?si=Y9wNQ1SxR4mp3TptHgWzkA',
+    embedId: '63SimdAQk45Pze1yY8ToNk',
+    mood: 'Introspección · Energía · Propósito',
+  },
+  {
+    id: 'consciente',
+    name: 'Música Consciente',
+    subtitle: 'Para tu práctica diaria',
+    emoji: '🎵',
+    url: 'https://open.spotify.com/playlist/4cYZUUb9p7PUIXpl59H39l?si=Az4VPgIBTtKdB9GIKzYxbQ',
+    embedId: '4cYZUUb9p7PUIXpl59H39l',
+    mood: 'Calma · Foco · Fluidez',
+  },
+  {
+    id: 'temazcal',
+    name: 'Icebath y Temazcal',
+    subtitle: 'Ritual de recuperación',
+    emoji: '🔥',
+    url: 'https://open.spotify.com/playlist/4Sf9gjdIOPZiM6HqQF76Tn?si=0ZlXF9dwQYCZIoDNM9ci_w',
+    embedId: '4Sf9gjdIOPZiM6HqQF76Tn',
+    mood: 'Profundidad · Ritual · Silencio',
+  },
+]
+
 
 // ─── LOGOS ───────────────────────────────────────────────────────
 export const LOGOS = {
@@ -158,14 +259,24 @@ export const PLANES: Plan[] = [
   },
 ]
 
-// ─── COACHES ─────────────────────────────────────────────────────
+// ─── COACHES ───────────────────────────────────────────────────
 export const COACHES: Coach[] = [
   {
     name: 'Betzy',
-    specialty: 'Cardio Consciente · Fuerza · Movilidad',
-    bio: 'Creadora del método re_line. Coach certificada con +5 años transformando cuerpos y mentes. Sus clases conectan el movimiento con el bienestar mental para resultados reales y duraderos.',
+    specialty: 'Cardio Consciente · Fuerza · Movilidad · Pilates',
+    bio: 'Lic. en Ciencias del Ejercicio (UANL) y fundadora del método re_line. Con más de 10 años guiando a personas reales, Betzabeth combina técnica, consciencia corporal y progresión estructurada para crear entrenamientos que transforman desde adentro. Certificada en Pilates, Barre, TRX y entrenamiento funcional.',
     imagePath: '/images/reline_betzy_entrenamiento-planche-terraza.jpeg',
   },
+]
+
+// ─── CERTIFICACIONES BETZY ───────────────────────────────────────────
+export const BETZY_CREDENTIALS = [
+  { year: '2014', label: 'Lic. Ciencias del Ejercicio', sub: 'UANL' },
+  { year: '2013', label: 'The Pilates Coach', sub: 'Certificación' },
+  { year: '2014', label: 'Barre', sub: 'Certificación' },
+  { year: '2016', label: 'TRX', sub: 'Certificación' },
+  { year: '2016', label: 'Entrenamiento de Pesos', sub: 'UANL' },
+  { year: '2017', label: 'Entrenamiento Funcional', sub: 'Certificación' },
 ]
 
 // ─── CLASES (fallback si la API no responde) ─────────────────────
@@ -235,7 +346,6 @@ export const TESTIMONIOS: Testimonio[] = [
 // ─── GALERÍA ─────────────────────────────────────────────────────
 export const GALERIA_IMAGES = [
   { src: '/images/reline_betzy_conjunto-deportivo-gris-retrato.jpeg', alt: 'Betzy ropa deportiva gris re_line conjunto premium' },
-  { src: '/images/reline_betzy_lunge-conjunto-deportivo-gris.jpeg',   alt: 'Betzy lunge ejercicio con conjunto deportivo gris re_line' },
   { src: '/images/reline_betzy_conjunto-blanco-coral-retrato.jpeg',   alt: 'Betzy conjunto deportivo blanco coral re_line' },
   { src: '/images/reline_betzy_corriendo-conjunto-deportivo-gris.jpeg', alt: 'Betzy corriendo con conjunto deportivo gris re_line' },
   { src: '/images/reline_betzy_conjunto-gris-pose-dinamica.jpeg',     alt: 'Betzy pose dinámica conjunto deportivo gris re_line' },

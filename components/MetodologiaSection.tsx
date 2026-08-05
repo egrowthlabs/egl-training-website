@@ -4,9 +4,26 @@ import Image from 'next/image'
 import { useReveal } from '@/hooks/useReveal'
 
 const BULLETS = [
-  { icon: '✦', text: 'Técnica antes que intensidad' },
-  { icon: '✦', text: 'Progresión estructurada' },
-  { icon: '✦', text: 'Comunidad que te impulsa' },
+  {
+    icon: '✦',
+    title: 'Técnica antes que intensidad',
+    text: 'Correcta ejecución y progresión en cada movimiento.',
+  },
+  {
+    icon: '✦',
+    title: 'Estructura y consciencia corporal',
+    text: 'Rutinas organizadas por niveles, objetivos y necesidades reales.',
+  },
+  {
+    icon: '✦',
+    title: 'Sin extremos, sin presión',
+    text: 'Respetando tu ritmo y celebrando cada avance del proceso.',
+  },
+  {
+    icon: '✦',
+    title: 'Acompañada en cada etapa',
+    text: 'No entrenas sola — hay guía, intención y recursos en todo momento.',
+  },
 ]
 
 export default function MetodologiaSection() {
@@ -31,31 +48,49 @@ export default function MetodologiaSection() {
           >
             Más que ejercicio.
             <br />
-            <span style={{ color: 'var(--primary-dark)' }}>Un estilo de vida.</span>
+            <span style={{ color: 'var(--primary-dark)' }}>Un espacio de bienestar real.</span>
           </h2>
+
+          {/* Párrafo principal */}
+          <p
+            className="text-base md:text-lg leading-relaxed mb-6"
+            style={{ color: 'rgba(26,26,26,0.7)' }}
+          >
+            Aquí no se trata de solo entrenar, sino de construir constancia, fuerza y una relación
+            más sana con tu cuerpo. El contenido está basado en un método claro y profesional, con
+            rutinas organizadas por niveles, objetivos y necesidades reales, pensadas para adaptarse
+            a distintos estilos de vida.
+          </p>
           <p
             className="text-base md:text-lg leading-relaxed mb-10"
             style={{ color: 'rgba(26,26,26,0.7)' }}
           >
-            El método re_line integra ciencia del movimiento con consciencia corporal.
-            Cada clase está diseñada para que progreses de forma segura, disfrutes el
-            proceso y construyas un cuerpo fuerte de adentro hacia afuera.
+            Cada programa combina técnica, funcionalidad y conciencia corporal, priorizando la
+            correcta ejecución, progresión y el equilibrio tanto físico como mental.
           </p>
 
           <ul className="flex flex-col gap-5">
             {BULLETS.map(b => (
-              <li key={b.text} className="flex items-start gap-4">
+              <li key={b.title} className="flex items-start gap-4">
                 <span
                   className="text-xl leading-none mt-0.5 flex-shrink-0"
                   style={{ color: 'var(--primary-dark)' }}
                 >
                   {b.icon}
                 </span>
-                <span
-                  className="font-semibold text-base md:text-lg"
-                  style={{ color: 'var(--dark)' }}
-                >
-                  {b.text}
+                <span>
+                  <span
+                    className="block font-semibold text-base md:text-lg"
+                    style={{ color: 'var(--dark)' }}
+                  >
+                    {b.title}
+                  </span>
+                  <span
+                    className="block text-sm md:text-base leading-snug mt-0.5"
+                    style={{ color: 'rgba(26,26,26,0.6)' }}
+                  >
+                    {b.text}
+                  </span>
                 </span>
               </li>
             ))}
@@ -87,11 +122,19 @@ export default function MetodologiaSection() {
               sizes="192px"
             />
           </div>
-          {/* Decorative teal dot */}
+          {/* Quote overlay */}
           <div
-            className="absolute -top-4 -right-4 w-16 h-16 rounded-full opacity-30"
-            style={{ backgroundColor: 'var(--primary)' }}
-          />
+            className="absolute -top-4 -right-4 max-w-[180px] rounded-2xl p-4 shadow-xl"
+            style={{
+              background: 'var(--dark)',
+              border: '1px solid rgba(95,179,179,0.25)',
+            }}
+          >
+            <p className="text-xs italic leading-snug" style={{ color: 'rgba(255,255,255,0.75)' }}>
+              &ldquo;El ejercicio se convierte en una herramienta de bienestar, fortaleza y crecimiento personal.&rdquo;
+            </p>
+            <p className="text-xs font-bold mt-2" style={{ color: 'var(--primary)' }}>— Betzy</p>
+          </div>
         </div>
       </div>
     </section>

@@ -18,7 +18,7 @@ export default function ClasesSection({ clases }: Props) {
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-14">
-          <p className="section-label mb-3">Contenido on-demand</p>
+          <p className="section-label mb-3" style={{ color: 'rgba(255,255,255,0.55)' }}>Contenido on-demand</p>
           <h2 className="section-title text-white mb-4">
             Explora nuestras clases
           </h2>

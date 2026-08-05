@@ -21,7 +21,7 @@ export default function CtaSection() {
         <h2 className="text-4xl md:text-6xl font-black text-white mb-6 leading-tight">
           &ldquo;Tu mejor versión
           <br />
-          <span style={{ color: 'var(--primary)' }}>empieza hoy.&rdquo;</span>
+          <span style={{ color: '#8ecece' }}>empieza hoy.&rdquo;</span>
         </h2>
         <p className="text-white/70 text-base md:text-lg mb-10 leading-relaxed">
           Únete a cientos de personas que ya decidieron entrenar con propósito.

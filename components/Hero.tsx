@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import { APP_URL } from '@/app/config'
+import { APP_URL, SLOGAN } from '@/app/config'
 
 export default function Hero() {
   return (
@@ -22,6 +22,14 @@ export default function Hero() {
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 w-full">
         <div className="max-w-2xl">
+
+          {/* Slogan oficial */}
+          <p
+            className="text-xs md:text-sm font-bold tracking-[0.22em] uppercase mb-5"
+            style={{ color: 'rgba(255,255,255,0.9)', animation: 'fadeIn 0.7s ease 0.05s both', letterSpacing: '0.22em' }}
+          >
+            {SLOGAN}
+          </p>
 
           {/* H1 */}
           <h1
@@ -67,13 +75,13 @@ export default function Hero() {
             </div>
             <div className="w-px h-10 bg-white/25" />
             <div className="text-center">
-              <p className="text-3xl font-black text-white">1</p>
-              <p className="text-white/60 text-sm">Coach</p>
+              <p className="text-3xl font-black text-white">100%</p>
+              <p className="text-white/60 text-sm">Online</p>
             </div>
             <div className="w-px h-10 bg-white/25" />
             <div className="text-center">
-              <p className="text-3xl font-black text-white">100%</p>
-              <p className="text-white/60 text-sm">Online</p>
+              <p className="text-3xl font-black text-white">+10</p>
+              <p className="text-white/60 text-sm">Años</p>
             </div>
           </div>
         </div>
